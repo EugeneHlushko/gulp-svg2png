@@ -21,7 +21,6 @@ var svg2png = require('../');
 
 describe('The "gulp-svg2png" plugin', () => {
 	it('should convert a SVG to a PNG', done => {
-		const filename = 'twitter.svg';
 		const stream = svg2png();
 		const image = Helper.createTestFile();
 
@@ -41,7 +40,6 @@ describe('The "gulp-svg2png" plugin', () => {
 	});
 
 	it('should convert a SVG to a PNG by a defined scaling factor', function (done) {
-		const filename = 'twitter.svg';
 		const stream = svg2png({ width: 200, height: 300 });
 		const image = Helper.createTestFile();
 
